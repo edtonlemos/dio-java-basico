@@ -28,10 +28,16 @@ public class ContaTerminal {
         printMessage();
     }
 
+    /**
+     * Limpa o terminal em que o sistema está sendo executado
+     */
     private static void cleanTerminal() {
         System.out.print("\033\143");
     }
 
+    /**
+     * Realiza a exibição da mensagem com as informações do Cliente
+     */
     private static void printMessage() {
         System.out.println("Olá "
                 + nomeCliente
@@ -84,7 +90,7 @@ public class ContaTerminal {
     }
 
     /**
-     * Realiza a entrada do numero da conta do cliente
+     * Realiza a entrada do saldo da conta do cliente
      *
      * @return new Scanner()
      */
